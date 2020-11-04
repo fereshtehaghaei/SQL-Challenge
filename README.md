@@ -30,7 +30,7 @@ Note: You may hear the term "Data Modeling" in place of "Data Engineering," but 
 
 #### Data Modeling
 
-Inspect the CSVs and sketch out an ERD of the tables. Feel free to use a tool like [http://www.quickdatabasediagrams.com](http://www.quickdatabasediagrams.com).
+Inspect the CSVs and sketch out an ERD (Entity Relationship Diagram)  of the tables. Feel free to use a tool like [http://www.quickdatabasediagrams.com](http://www.quickdatabasediagrams.com).
 
 #### Data Engineering
 
@@ -102,3 +102,25 @@ Evidence in hand, you march into your boss's office and present the visualizatio
 ### Copyright
 
 Trilogy Education Services © 2019. All Rights Reserved.
+
+Employees
+
+Departments
+
+Dept_Manager
+
+Dept_Employee
+
+Title
+
+Salaries
+
+files to be saves:  employee_db (Queries).sql
+
+​								employee_db (Complete). sql
+
+​								employee_db (Table_Schemas).sql
+
+​								employee_db (Bonus).ipynb
+
+*******The table that you are trying to add the info to that's where you create the foreign key
