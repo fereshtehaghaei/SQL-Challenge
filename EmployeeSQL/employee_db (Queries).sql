@@ -8,7 +8,7 @@ SELECT * FROM Salaries;
 SELECT E.emp_no, E.last_name, E.first_name, E.sex, S.salary
 FROM Employees E
 JOIN Salaries S
-ON E.emp_no = S.emp_no;
+	ON E.emp_no = S.emp_no;
 
 
 -- Question(2): List first name, last name, and hire date for employees who were hired in 1986.
@@ -38,9 +38,9 @@ SELECT * FROM Dept_Manager;
 SELECT D.dept_no, D.dept_name, DM.emp_no, E.last_name, E.first_name
 FROM Departments AS D
 JOIN Dept_Manager AS DM
-ON D.dept_no = DM.dept_no
+	ON D.dept_no = DM.dept_no
 JOIN Employees AS E
-ON E.emp_no = DM.emp_no;
+	ON E.emp_no = DM.emp_no;
 
 
 -- Question(4): List the department of each employee with the following information: 
@@ -54,9 +54,9 @@ SELECT * FROM Departments;
 SELECT E.emp_no, E.last_name, E.first_name, D.dept_name
 FROM Employees AS E
 JOIN Dept_Employee AS DE
-ON E.emp_no = DE.emp_no
+	ON E.emp_no = DE.emp_no
 JOIN Departments AS D
-ON D.dept_no = DE.dept_no;
+	ON D.dept_no = DE.dept_no;
 
 
 -- Question(5): List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
@@ -80,9 +80,9 @@ SELECT * FROM Departments;
 SELECT E.emp_no, E.last_name, E.first_name, D.dept_name
 FROM Dept_Employee AS DM
 JOIN Employees AS E
-ON DM.emp_no = E.emp_no
+	ON DM.emp_no = E.emp_no
 JOIN Departments AS D
-ON D.dept_no = DM.dept_no
+	ON D.dept_no = DM.dept_no
 WHERE dept_name ='Sales';
 
 -- Question(7):List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
@@ -95,11 +95,11 @@ SELECT * FROM Departments;
 SELECT E.emp_no, E.last_name, E.first_name, D.dept_name
 FROM Dept_Employee AS DM
 JOIN Employees AS E
-ON DM.emp_no = E.emp_no
+	ON DM.emp_no = E.emp_no
 JOIN Departments AS D
-ON D.dept_no = DM.dept_no
+	ON D.dept_no = DM.dept_no
 WHERE D.dept_name = 'Sales' 
-OR D.dept_name = 'Development';
+	OR D.dept_name = 'Development';
 
 -- Question(8): In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 SELECT last_name,
