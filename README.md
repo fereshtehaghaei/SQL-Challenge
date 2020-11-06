@@ -12,7 +12,7 @@ Designing tables to hold data in the CSVs, importing the CSVs into a SQL databas
 2. Data Engineering
 3. Data Analysis
 
-### ----------------------------------------------- DATA MODELING ------------------------------------------------- 
+### ----------------------------------------- DATA MODELING ------------------------------------------ 
 
 Inspect the CSVs and sketch out an ERD (Entity Relationship Diagram)  of the tables using QuickDBD.
 
@@ -20,7 +20,7 @@ Inspect the CSVs and sketch out an ERD (Entity Relationship Diagram)  of the tab
 
 
 
-### --------------------------------------------- DATA ENGINEERING -----------------------------------------------
+### --------------------------------------- DATA ENGINEERING ----------------------------------------
 
 - Used the information to create a table schema for each of the six CSV files. Specified data types, primary keys, foreign keys, and other constraints.
 
@@ -63,7 +63,7 @@ Inspect the CSVs and sketch out an ERD (Entity Relationship Diagram)  of the tab
 
 
 
-## ---------------------------------------- DATA ANALYSIS -----------------------------------------
+## ---------------------------------- DATA ANALYSIS ----------------------------------
 
 #### 								After completing database, we are analyzing the following:
 
