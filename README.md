@@ -79,27 +79,27 @@ Inspect the CSVs and sketch out an ERD (Entity Relationship Diagram)  of the tab
 
 3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
 
-   ![](EmployeeSQL\Images\Q3.png)
+   ![](EmployeeSQL/Images/Q3.png)
 
 4. List the department of each employee with the following information: employee number, last name, first name, and department name.
 
-   ![](EmployeeSQL\Images\Q4.png)
+   ![](EmployeeSQL/Images/Q4.png)
 
 5. List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
 
-   ![](EmployeeSQL\Images\Q5.png)
+   ![](EmployeeSQL/Images/Q5.png)
 
 6. List all employees in the Sales department, including their employee number, last name, first name, and department name.
 
-   ![](EmployeeSQL\Images\Q6.png)
+   ![](EmployeeSQL/Images/Q6.png)
 
 7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
 
-   ![](EmployeeSQL\Images\Q7.png)
+   ![](EmployeeSQL/Images/Q7.png)
 
 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 
-![](EmployeeSQL\Images\Q8.png)
+![](EmployeeSQL/Images/Q8.png)
 
 
 
