@@ -14,7 +14,7 @@ Designing tables to hold data in the CSVs, importing the CSVs into a SQL databas
 
 Inspect the CSVs and sketch out an ERD (Entity Relationship Diagram)  of the tables using QuickDBD.
 
-![](EmployeeSQL/Images/ERD Snapshot.png)
+![](EmployeeSQL/Images/ERD_Snapshot.png)
 
 
 
