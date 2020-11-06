@@ -1,8 +1,6 @@
 # Employee Database: A Mystery in Two Parts
 
-
-
-![] ([EmployeeSQL](https://github.com/fereshtehaghaei/SQL-Challenge/tree/master/EmployeeSQL)/Images/[sql.png](https://github.com/fereshtehaghaei/SQL-Challenge/blob/master/EmployeeSQL/sql.png))
+![] (EmployeesSQL/Images/sql.png))
 
 Conduct a research project on employees of the corporation from the 1980s and 1990s. All that remain of the database of employees from that period are six CSV files.
 
@@ -16,7 +14,7 @@ Designing tables to hold data in the CSVs, importing the CSVs into a SQL databas
 
 Inspect the CSVs and sketch out an ERD (Entity Relationship Diagram)  of the tables using QuickDBD.
 
-![] ([EmployeeSQL](https://github.com/fereshtehaghaei/SQL-Challenge/tree/master/EmployeeSQL)/Images/[ERD Snapshot.png](https://github.com/fereshtehaghaei/SQL-Challenge/blob/master/EmployeeSQL/ERD Snapshot.png))
+![] ([EmployeeSQL/Images/ERD Snapshot.png))
 
 
 
