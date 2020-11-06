@@ -1,126 +1,160 @@
-# SQL Homework - Employee Database: A Mystery in Two Parts
+# Employee Database: A Mystery in Two Parts
 
-![sql.png](sql.png)
 
-## Background
 
-It is a beautiful spring day, and it is two weeks since you have been hired as a new data engineer at Pewlett Hackard. Your first major task is a research project on employees of the corporation from the 1980s and 1990s. All that remain of the database of employees from that period are six CSV files.
+![] ([EmployeeSQL](https://github.com/fereshtehaghaei/SQL-Challenge/tree/master/EmployeeSQL)/[sql.png](https://github.com/fereshtehaghaei/SQL-Challenge/blob/master/EmployeeSQL/sql.png))
 
-In this assignment, you will design the tables to hold data in the CSVs, import the CSVs into a SQL database, and answer questions about the data. In other words, you will perform:
+Conduct a research project on employees of the corporation from the 1980s and 1990s. All that remain of the database of employees from that period are six CSV files.
 
-1. Data Engineering
+Designing tables to hold data in the CSVs, importing the CSVs into a SQL database, answering questions about the data and  performing the following:
 
+1. Data Modeling
+2. Data Engineering
 3. Data Analysis
 
-Note: You may hear the term "Data Modeling" in place of "Data Engineering," but they are the same terms. Data Engineering is the more modern wording instead of Data Modeling.
+### ----------------------------------------------- DATA MODELING ------------------------------------------------- 
 
-### Before You Begin
+Inspect the CSVs and sketch out an ERD (Entity Relationship Diagram)  of the tables using QuickDBD.
 
-1. Create a new repository for this project called `sql-challenge`. **Do not add this homework to an existing repository**.
+![] ([EmployeeSQL](https://github.com/fereshtehaghaei/SQL-Challenge/tree/master/EmployeeSQL)/[ERD Snapshot.png](https://github.com/fereshtehaghaei/SQL-Challenge/blob/master/EmployeeSQL/ERD Snapshot.png))
 
-2. Clone the new repository to your computer.
 
-3. Inside your local git repository, create a directory for the SQL challenge. Use a folder name to correspond to the challenge: **EmployeeSQL**.
 
-4. Add your files to this folder.
+### --------------------------------------------- DATA ENGINEERING -----------------------------------------------
 
-5. Push the above changes to GitHub.
+- Used the information to create a table schema for each of the six CSV files. Specified data types, primary keys, foreign keys, and other constraints.
 
-## Instructions
+- Created Tables in a correct order to handle foreign keys
 
-#### Data Modeling
+- Imported each CSV file into the corresponding SQL table.
 
-Inspect the CSVs and sketch out an ERD (Entity Relationship Diagram)  of the tables. Feel free to use a tool like [http://www.quickdatabasediagrams.com](http://www.quickdatabasediagrams.com).
+- Viewed each table to see imported data
 
-#### Data Engineering
+  
+  
+  ##### -- Creating Title Table 
 
-* Use the information you have to create a table schema for each of the six CSV files. Remember to specify data types, primary keys, foreign keys, and other constraints.
+![](EmployeeSQL/Images/title.png)
 
-  * For the primary keys check to see if the column is unique, otherwise create a [composite key](https://en.wikipedia.org/wiki/Compound_key). Which takes to primary keys in order to uniquely identify a row.
-  * Be sure to create tables in the correct order to handle foreign keys.
 
-* Import each CSV file into the corresponding SQL table. **Note** be sure to import the data in the same order that the tables were created and account for the headers when importing to avoid errors.
+----------------------------------
+##### -- Creating Employees Table 
+#### ![](EmployeeSQL/Images/employees.png)
 
-#### Data Analysis
 
-Once you have a complete database, do the following:
+----------------------------------
+#### -- Creating Departments Table 
+![](EmployeeSQL/Images/departments.png)
 
-1. List the following details of each employee: employee number, last name, first name, sex, and salary.
+
+----------------------------------
+#### -- Creating Dept_Employee Table 
+![](EmployeeSQL/Images/dept_employee.png)
+
+
+----------------------------------
+#### --Creating Dept_Manager Table 
+![](EmployeeSQL/Images/dept_manager.png)
+
+
+----------------------------------
+#### -- Creating Salaries Table 
+![](EmployeeSQL/Images/salaries.png)
+
+
+
+## ---------------------------------------- DATA ANALYSIS -----------------------------------------
+
+#### 								After completing database, we are analyzing the following:
+
+1. **List the following details of each employee: employee number, last name, first name, sex, and salary.**
+
+   ![](EmployeeSQL/Images/Q1.png)
+
+   
 
 2. List first name, last name, and hire date for employees who were hired in 1986.
 
+   ![Q2](C:\Users\cache\OneDrive\Desktop\BootCampClassWork\SQL-Challenge\EmployeeSQL\Images\Q2.png)
+
 3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
+
+   ![Q3](C:\Users\cache\OneDrive\Desktop\BootCampClassWork\SQL-Challenge\EmployeeSQL\Images\Q3.png)
 
 4. List the department of each employee with the following information: employee number, last name, first name, and department name.
 
+   ![Q4](C:\Users\cache\OneDrive\Desktop\BootCampClassWork\SQL-Challenge\EmployeeSQL\Images\Q4.png)
+
 5. List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
+
+   ![Q5](C:\Users\cache\OneDrive\Desktop\BootCampClassWork\SQL-Challenge\EmployeeSQL\Images\Q5.png)
 
 6. List all employees in the Sales department, including their employee number, last name, first name, and department name.
 
+   ![Q6](C:\Users\cache\OneDrive\Desktop\BootCampClassWork\SQL-Challenge\EmployeeSQL\Images\Q6.png)
+
 7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
+
+   ![Q7](C:\Users\cache\OneDrive\Desktop\BootCampClassWork\SQL-Challenge\EmployeeSQL\Images\Q7.png)
 
 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 
-## Bonus (Optional)
+![Q8](C:\Users\cache\OneDrive\Desktop\BootCampClassWork\SQL-Challenge\EmployeeSQL\Images\Q8.png)
 
-As you examine the data, you are overcome with a creeping suspicion that the dataset is fake. You surmise that your boss handed you spurious data in order to test the data engineering skills of a new employee. To confirm your hunch, you decide to take the following steps to generate a visualization of the data, with which you will confront your boss:
 
-1. Import the SQL database into Pandas. (Yes, you could read the CSVs directly in Pandas, but you are, after all, trying to prove your technical mettle.) This step may require some research. Feel free to use the code below to get started. Be sure to make any necessary modifications for your username, password, host, port, and database name:
 
-   ```sql
-   from sqlalchemy import create_engine
-   engine = create_engine('postgresql://localhost:5432/<your_db_name>')
+## Data Visualization (Bonus)
+
+Generate a visualization of the data by:
+
+1. Importing the SQL database into Pandas, Merge Data and Create Group By for Average salary.
+
+   ```
+   # Create Engine and Pass in Postgres Connection and Setup to Connect to Database 
+   
+   engine = create_engine(f'postgresql://postgres:{Password}@localhost:5432/Employee_DB')
    connection = engine.connect()
    ```
 
-* Consult [SQLAlchemy documentation](https://docs.sqlalchemy.org/en/latest/core/engines.html#postgresql) for more information.
+   ```
+   # Query all records from Employee DataBase instead of calling table's name we use SQL SELECT 
+   
+   employees_data = pd.read_sql("SELECT * FROM Employees", connection)
+   salary_data = pd.read_sql("SELECT * FROM Salaries", connection)
+   title_data = pd.read_sql("SELECT * FROM Title", connection)
+   ```
 
-* If using a password, do not upload your password to your GitHub repository. See [https://www.youtube.com/watch?v=2uaTPmNvH0I](https://www.youtube.com/watch?v=2uaTPmNvH0I) and [https://help.github.com/en/github/using-git/ignoring-files](https://help.github.com/en/github/using-git/ignoring-files) for more information.
+   ```
+   # Groupby and find the Average salary for employees
+   
+   title_salary_avg = employee_salary_title.groupby(["Title"])['Salary'].mean()
+   title_salary_avg = title_salary_avg.reset_index()
+   title_salary_avg.head(10)
+   ```
+
+   |      |              Title |       Salary |
+   | ---: | -----------------: | -----------: |
+   |    0 | Assistant Engineer | 48564.434447 |
+   |    1 |           Engineer | 48535.336511 |
+   |    2 |            Manager | 51531.041667 |
+   |    3 |    Senior Engineer | 48506.799871 |
+   |    4 |       Senior Staff | 58550.172704 |
+   |    5 |              Staff | 58465.382850 |
+   |    6 |   Technique Leader | 48582.896092 |
+
+   
 
 2. Create a histogram to visualize the most common salary ranges for employees.
 
+   ![](EmployeeSQL/Images/Hist_Employee_Salary_Range.png)
+
+   
+
 3. Create a bar chart of average salary by title.
+
+   ![](EmployeeSQL/Images/Bar_Avg_Salary_By_Title.png)
 
 ## Epilogue
 
-Evidence in hand, you march into your boss's office and present the visualization. With a sly grin, your boss thanks you for your work. On your way out of the office, you hear the words, "Search your ID number." You look down at your badge to see that your employee ID number is 499942.
+Evidence in hand, you march into your boss's office and present the visualization. With a sly grin, your boss thanks you for your work. On your way out of the office, you hear the words, "Search your ID number." You look down at your badge to see that your employee ID number is 499942. 
 
-## Submission
-
-* Create an image file of your ERD.
-
-* Create a `.sql` file of your table schemata.
-
-* Create a `.sql` file of your queries.
-
-* (Optional) Create a Jupyter Notebook of the bonus analysis.
-
-* Create and upload a repository with the above files to GitHub and post a link on BootCamp Spot.
-
-* Ensure your repository has regular commits (i.e. 20+ commits) and a thorough README.md file
-
-### Copyright
-
-Trilogy Education Services © 2019. All Rights Reserved.
-
-Employees
-
-Departments
-
-Dept_Manager
-
-Dept_Employee
-
-Title
-
-Salaries
-
-files to be saves:  employee_db (Queries).sql
-
-​								employee_db (Complete). sql
-
-​								employee_db (Table_Schemas).sql
-
-​								employee_db (Bonus).ipynb
-
-*******The table that you are trying to add the info to that's where you create the foreign key
