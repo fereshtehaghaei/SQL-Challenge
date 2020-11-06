@@ -156,3 +156,26 @@ Generate a visualization of the data by:
 
 Evidence in hand, you march into your boss's office and present the visualization. With a sly grin, your boss thanks you for your work. On your way out of the office, you hear the words, "Search your ID number." You look down at your badge to see that your employee ID number is 499942. 
 
+
+
+```
+employees = pd.read_sql("SELECT * FROM Employees WHERE emp_no = 499942", connection)
+employees
+```
+
+|      | emp_no | emp_title_id | birth_date | first_name | last_name |  sex |  hire_date |
+| ---: | -----: | -----------: | ---------: | ---------: | --------: | ---: | ---------: |
+|    0 | 499942 |        e0004 | 1963-01-10 |      April |  Foolsday |    F | 1997-02-10 |
+
+
+
+
+
+```
+emp_id_499942 = employee_salary_title.loc[employee_salary_title ['Employee Number'] == 499942]
+emp_id_499942
+```
+
+|        | Title ID |            Title | Employee Number | Salary | First Name | Last Name | Birth Date |  Sex |  Hire Date |
+| -----: | -------: | ---------------: | --------------: | -----: | ---------: | --------: | ---------: | ---: | ---------: |
+| 299999 |    e0004 | Technique Leader |          499942 |  40000 |      April |  Foolsday | 1963-01-10 |    F | 1997-02-10 |
