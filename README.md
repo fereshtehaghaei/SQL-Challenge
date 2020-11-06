@@ -75,7 +75,7 @@ Inspect the CSVs and sketch out an ERD (Entity Relationship Diagram)  of the tab
 
 2. List first name, last name, and hire date for employees who were hired in 1986.
 
-   ![](EmployeeSQL\Images\Q2.png)
+   ![](EmployeeSQL/Images/Q2.png)
 
 3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
 
